@@ -60,11 +60,12 @@ public class ChessGame extends Observable implements BoardGames{
 	public boolean move (int xInit, int yInit, int xFinal, int yFinal){
 		boolean ret = false; 
 
-		ret = echiquier.isMoveOk(xInit, yInit, xFinal, yFinal);
+		ret = echiquier.isMoveOk(xFinal, yFinal); //modifié pour qu'il n'y ait pas xInit et yInit
 		if (ret){
 			ret = echiquier.move(xInit, yInit, xFinal, yFinal);
 		}
 		if (ret){
+			echiquier.setMessage("OK"); //rajouté par Alice
 			echiquier.switchJoueur();
 		}		
 		
