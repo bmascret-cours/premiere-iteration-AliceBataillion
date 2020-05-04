@@ -20,8 +20,8 @@ public enum ChessPiecePos {
 	TOURNOIR("Tour", Couleur.NOIR, new Coord[] {new Coord(0,0), new Coord(7,0)}),
 	CAVALIERNOIR("Cavalier", Couleur.NOIR, new Coord[] {new Coord(1,0), new Coord(6,0)}), 
 	FOUNOIR("Fou", Couleur.NOIR, new Coord[] {new Coord(2,0), new Coord(5,0)}), 
-	REINENOIR("Reine", Couleur.NOIR, new Coord[] {new Coord(3,0)}), 
-	ROINOIR("Roi", Couleur.NOIR, new Coord[] {new Coord(4,0)}),
+	REINENOIR("Reine", Couleur.NOIR, new Coord[] {new Coord(4,0)}), 
+	ROINOIR("Roi", Couleur.NOIR, new Coord[] {new Coord(3,0)}),
 	PIONNOIR("Pion", Couleur.NOIR, new Coord[] {new Coord(0,1), new Coord(1,1), new Coord(2,1), new Coord(3,1),
 			new Coord(4,1), new Coord(5,1), new Coord(6,1), new Coord(7,1)})   
 	; 
@@ -30,7 +30,8 @@ public enum ChessPiecePos {
 	public  Coord[] coords = new Coord[8] ;   
 
 	ChessPiecePos( String nom, Couleur couleur, Coord[] coords) { 
-		this.nom = nom;this.couleur = couleur;
+		this.nom = nom;
+		this.couleur = couleur;
 		this.coords = coords;
 	} 
 
